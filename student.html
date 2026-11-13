@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2>Students Age</h2>
+        <ul id="list"></ul>
+        <script>
+            async function loadStudent(){
+                const response=await fetch("studentprofile.json");
+                if(!response.ok){
+                    throw new Error("Could not load file: "+response.status);
+                }
+                const students=await response.json();
+                const list=document.getElementById('list');
+                for(const s of students){
+                    const li=document.createElement('li');
+                    li.textContent=s.name+ ":"+ s.age;
+                    list.appendChild(li);
+                }
+                
+            }
+            loadStudent().catch(err => console.error(err));
+
+        </script>
+    </body>
+</html>

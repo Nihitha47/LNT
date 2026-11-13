@@ -1,0 +1,20 @@
+[
+    {
+        "name":"Nihitha",
+        "age":19,
+        "city":"Bangalore",
+        "isStudent":true
+    },
+    {
+        "name":"John",
+        "age":25,
+        "city":"Chennai",
+        "isStudent":false
+    },
+    {
+        "name":"Lia",
+        "age":21,
+        "city":"Hyderabad",
+        "isStudent":true
+    }
+]
